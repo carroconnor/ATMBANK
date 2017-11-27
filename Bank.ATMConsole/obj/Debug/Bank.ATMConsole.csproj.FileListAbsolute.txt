@@ -1,0 +1,17 @@
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\bin\Debug\Bank.ATMConsole.exe.config
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\bin\Debug\Bank.ATMConsole.exe
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\bin\Debug\Bank.ATMConsole.pdb
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\bin\Debug\Bank.Models.dll
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\bin\Debug\Bank.Services.dll
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\bin\Debug\EntityFramework.dll
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\bin\Debug\EntityFramework.SqlServer.dll
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\bin\Debug\Bank.Models.pdb
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\bin\Debug\Bank.Models.dll.config
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\bin\Debug\Bank.Services.pdb
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\bin\Debug\Bank.Services.dll.config
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\bin\Debug\EntityFramework.xml
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\bin\Debug\EntityFramework.SqlServer.xml
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\obj\Debug\Bank.ATMConsole.csprojResolveAssemblyReference.cache
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\obj\Debug\Bank.ATMConsole.csproj.CoreCompileInputs.cache
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\obj\Debug\Bank.ATMConsole.exe
+C:\DotNetProjects\BankAccount\Bank\Bank.ATMConsole\obj\Debug\Bank.ATMConsole.pdb
