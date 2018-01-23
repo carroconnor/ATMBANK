@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using Bank.Services;
 
 namespace Bank.ATMConsole
@@ -12,20 +8,16 @@ namespace Bank.ATMConsole
     {
         static void Main(string[] args)
         {
-            //Add Client
-
             ClientService client = new ClientService();
-            client.CreateClient("Carr", "OConnor", 2);
+            client.CreateClient("Carr", "OConnor");
 
-
-            ClientService Welcome = new ClientService();
+            ClientService clientService = new ClientService();
 
             Console.WriteLine("$ Welcome to O'Connor's World Bank $");
             Console.ReadLine();
             Console.Clear();
             Thread.Sleep(600);
-             
-            //Enters Account Number
+
             Console.WriteLine("Please enter your Account Number");
             int acctNum = int.Parse(Console.ReadLine());
 
@@ -33,17 +25,15 @@ namespace Bank.ATMConsole
             int pin = int.Parse(Console.ReadLine());
             Console.Clear();
 
-            //Verifies Account Number
+            clientService.VerifyUser(acctNum, pin);
 
-            Welcome.VerifyUser(acctNum, pin);
-
-            decimal choice =  decimal.Parse(Console.ReadLine()); 
+            decimal choice = decimal.Parse(Console.ReadLine());
             switch (choice)
             {
                 case 1:
                     AccountController.GetAccount(acctNum, pin);
                     break;
-                     
+
                 case 2:
 
                     Console.WriteLine("How much would you like to deposit?");
@@ -59,15 +49,8 @@ namespace Bank.ATMConsole
                     Console.Clear();
                     Console.WriteLine("Have A Great Day");
                     break;
-
-
             }
-
-            
             Console.ReadLine();
-
-
-
         }
     }
 }

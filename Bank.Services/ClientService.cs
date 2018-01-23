@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Bank.Models;
 
 namespace Bank.Services
@@ -10,9 +7,10 @@ namespace Bank.Services
     public class ClientService
     {
 
+        private MenuService menuservice = new MenuService();
+        private AtmBankEntities db = new AtmBankEntities();
 
-
-        public bool CreateClient(string first, string last, int id)
+        public bool CreateClient(string first, string last)
         {
             using (var ctx = new AtmBankEntities())
             {
@@ -20,19 +18,15 @@ namespace Bank.Services
                     new Client
                     {
                         FirstName = first,
-                        LastName = last,
-                        ClientID = id
+                        LastName = last
                     };
+
                 ctx.Clients.Add(entity);
+
                 return ctx.SaveChanges() == 1;
-
             }
-
         }
 
-
-        private MenuService menuservice = new MenuService();
-        private AtmBankEntities db = new AtmBankEntities();
         public bool VerifyUser(int acctNum, int pin)
         {
             var query = from a in db.Accounts
@@ -43,13 +37,11 @@ namespace Bank.Services
             {
                 menuservice.ListOptions();
                 return true;
-
             }
 
             Console.WriteLine("Incorrect Username or Pin");
             return false;
         }
-
     }
 }
 
